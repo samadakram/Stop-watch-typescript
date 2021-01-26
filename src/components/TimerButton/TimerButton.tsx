@@ -1,8 +1,6 @@
 import React from "react";
 
-import "./Button.css";
-
-const Button = ({ title, click, disable }) => {
+const TimerButton = ({ title, click, disable }) => {
   return (
     <button disabled={disable} className="btn" onClick={click}>
       {title}
@@ -10,4 +8,4 @@ const Button = ({ title, click, disable }) => {
   );
 };
 
-export default Button;
+export default TimerButton;
