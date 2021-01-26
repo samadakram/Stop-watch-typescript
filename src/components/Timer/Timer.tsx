@@ -1,9 +1,12 @@
 import React from 'react';
+import './Timer.css';
 
 const Timer = () => {
     return (
         <div className="timer-container">
-            Timer Component
+            <div className="time-box">
+                <span>"00:00:00"</span>
+            </div>
         </div>
     );
 }
