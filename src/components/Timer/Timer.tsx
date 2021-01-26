@@ -58,7 +58,11 @@ const Timer = () => {
                 </span>
             </div>
             <div className="three-buttons">
-                <TimerButton title="Start" click={start} disable={false} />
+                {disable ? (
+                    <TimerButton title="Start" click={start} disable={disable} />
+                ) : (
+                    <TimerButton title="Start" click={start} disable={false} />
+                ) }
                 <TimerButton title="Pause" disable={false} />
                 <TimerButton title="Reset" disable={false} />
             </div>
