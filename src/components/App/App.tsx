@@ -1,9 +1,10 @@
 import React from 'react';
+import Timer from '../Timer/Timer';
 
 const App = () => {
     return (
         <div>
-            <h1>Stop Watch</h1>
+            <Timer />
         </div>
     );
 }
