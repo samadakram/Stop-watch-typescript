@@ -8,6 +8,7 @@ const Timer = () => {
             <div className="time-box">
                 <span>"00:00:00"</span>
             </div>
+            <div className="three-buttons"></div>
         </div>
     );
 }
