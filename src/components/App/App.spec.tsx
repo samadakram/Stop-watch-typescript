@@ -3,9 +3,9 @@ import { shallow } from 'enzyme';
 import App from './App';
 
 describe('should render App component', () => {
+    let container = shallow(<App />);
 
     it('should render a div',() => {
-        let container = shallow(<App />);
         expect(container.find('div').length).toEqual(1);
     });
 });
