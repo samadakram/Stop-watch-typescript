@@ -1,4 +1,4 @@
-export type Hour = number;
+export type NumberTypes = number;
 
 export type action = () => void;
 
