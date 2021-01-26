@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './Timer.css';
 
 // import Types
-import {NumberTypes} from '../../Types/Types';
+import {NumberTypes,Button} from '../../Types/Types';
 
 // import Timer Button Component
 import TimerButton from '../TimerButton/TimerButton';
@@ -10,6 +10,9 @@ import TimerButton from '../TimerButton/TimerButton';
 const Timer = () => {
     let [hour, setHour] = useState<NumberTypes>(0);
     let [minutes, setMinutes] = useState<NumberTypes>(0);
+    let [seconds, setSeconds] = useState<NumberTypes>(0);
+    let [disable, setDisable] = useState<Button["disable"]>(false);
+    let [access, setAccess] = useState<any>();
 
     let start = () => {}
 
