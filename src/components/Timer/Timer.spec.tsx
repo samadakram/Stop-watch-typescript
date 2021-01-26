@@ -14,4 +14,8 @@ describe("Timer", () => {
   it('should render a span', () => {
     expect(container.find("span").length).toEqual(1)
   });
+
+  it('should render a heading', () => {
+    expect(container.find('h1').length).toEqual(1);
+  });
 })
