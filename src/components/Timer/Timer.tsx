@@ -17,19 +17,34 @@ const Timer = () => {
     let start = () => {
         setDisable(true);
         setAccess(
-            setInterval( ()=> {
-                if (seconds > 60) {
-                    seconds = 0;
-                    minutes += 1;
-                    setMinutes(minutes);
-                }
+            // setInterval( ()=> {
+            //     if (seconds > 60) {
+            //         seconds = 0;
+            //         minutes += 1;
+            //         setMinutes(minutes);
+            //     }
 
-                if (minutes > 60) {
-                    minutes = 0;
-                    hour += 1;
-                    setHour(hour);
+            //     if (minutes > 60) {
+            //         minutes = 0;
+            //         hour += 1;
+            //         setHour(hour);
+            //     }
+            // },1000)
+            setInterval(() => {
+                if (seconds > 59) {
+                  seconds = 0;
+                  minutes += 1;
+                  setMinutes(minutes);
+                } else if (minutes > 59) {
+                  seconds = 0;
+                  minutes = 0;
+                  hour++;
+                  setHour(hour);
+                } else {
+                  setSeconds(seconds);
+                  seconds += 1;
                 }
-            },1000)
+              }, 10)
         );
     };
 
