@@ -25,6 +25,6 @@ describe("Timer", () => {
   });
 
   it('should render 3 Button component instances', () => {
-    expect(container.find('Button').length).toEqual(3)
+    expect(container.find('TimerButton').length).toEqual(3)
   });
 })
