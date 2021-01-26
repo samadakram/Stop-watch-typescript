@@ -18,4 +18,12 @@ describe("Timer", () => {
   it('should render a heading', () => {
     expect(container.find('h1').length).toEqual(1);
   });
+
+  it('should render button', () => {
+    expect(container.find('.three-buttons').length).toEqual(1)
+  });
+
+  // it('should render 3 Button component instances', () => {
+  //   expect(container.find('Button').length).toEqual(3)
+  // });
 })
