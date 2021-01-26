@@ -1,6 +1,9 @@
 import React from 'react';
 import './Timer.css';
 
+// import Timer Button Component
+import TimerButton from '../TimerButton/TimerButton';
+
 const Timer = () => {
     return (
         <div className="timer-container">
@@ -8,7 +11,11 @@ const Timer = () => {
             <div className="time-box">
                 <span>"00:00:00"</span>
             </div>
-            <div className="three-buttons"></div>
+            <div className="three-buttons">
+                <TimerButton title="Start" disable={false} />
+                <TimerButton title="Pause" disable={false} />
+                <TimerButton title="Reset" disable={false} />
+            </div>
         </div>
     );
 }
