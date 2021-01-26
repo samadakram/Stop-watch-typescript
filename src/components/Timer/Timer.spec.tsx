@@ -1,6 +1,7 @@
 import React from "react"
 import { shallow } from "enzyme"
-import Timer from "./Timer"
+import Timer from "./Timer";
+import TimerButton from "../TimerButton/TimerButton";
 
 describe("Timer", () => {
   let container: any
@@ -23,7 +24,7 @@ describe("Timer", () => {
     expect(container.find('.three-buttons').length).toEqual(1)
   });
 
-  // it('should render 3 Button component instances', () => {
-  //   expect(container.find('Button').length).toEqual(3)
-  // });
+  it('should render 3 Button component instances', () => {
+    expect(container.find('Button').length).toEqual(3)
+  });
 })
