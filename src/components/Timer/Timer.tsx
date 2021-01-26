@@ -1,10 +1,22 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Timer.css';
+
+// import Types
+import {NumberTypes} from '../../Types/Types';
 
 // import Timer Button Component
 import TimerButton from '../TimerButton/TimerButton';
 
 const Timer = () => {
+    let [hour, setHour] = useState<NumberTypes>(0);
+    let [minutes, setMinutes] = useState<NumberTypes>(0);
+
+    let start = () => {}
+
+    const pause = () => {}
+
+    const reset = () => {}
+
     return (
         <div className="timer-container">
             <h1>Stop Watch</h1>
