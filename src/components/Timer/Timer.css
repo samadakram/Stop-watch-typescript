@@ -5,3 +5,8 @@
     margin: auto;
     text-align: center;
 }
+.time-box {
+    margin: auto;
+    width: 300px;
+    border: 1px solid black;
+}
