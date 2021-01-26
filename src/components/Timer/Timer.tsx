@@ -31,9 +31,12 @@ const Timer = () => {
                 }
             },1000)
         );
-    }
+    };
 
-    const pause = () => {}
+    const pause = () => {
+        setDisable(false);
+        clearInterval(access);
+    };
 
     const reset = () => {}
 
