@@ -38,7 +38,13 @@ const Timer = () => {
         clearInterval(access);
     };
 
-    const reset = () => {}
+    const reset = () => {
+        setDisable(false);
+        clearInterval(access);
+        setSeconds(0);
+        setMinutes(0);
+        setHour(0);
+    };
 
     return (
         <div className="timer-container">
