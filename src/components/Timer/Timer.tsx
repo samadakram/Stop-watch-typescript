@@ -50,7 +50,7 @@ const Timer = () => {
 
     return (
         <div className="timer-container">
-            <h1>Stop Watch</h1>
+            <h1>STOP WATCH</h1>
             <div className="time-box">
                 <span>
                 {hour < 10 && "0"}
