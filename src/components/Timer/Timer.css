@@ -31,3 +31,7 @@ span {
     font-size: 50px;
     color: white;
 }
+
+.timer-container h1 {
+    color: #f2a365;
+}
