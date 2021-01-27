@@ -14,7 +14,9 @@
     width: 200px;
     height: 200px;
     border-radius: 100px;
-    border: 8px solid black;
+    border: 8px solid;
+    border-top-color: #f2a365;
+    border-bottom-color: #f2a365;
     display: flex;
     justify-content: center;
     align-items: center;
