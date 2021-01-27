@@ -14,11 +14,12 @@
     width: 200px;
     height: 200px;
     border-radius: 100px;
-    border: 1px solid black;
+    border: 8px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 0 10px 0 10px;
 }
 
 span {
