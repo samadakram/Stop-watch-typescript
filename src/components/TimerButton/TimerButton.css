@@ -1,0 +1,40 @@
+.btn {
+    font-size: 26px;
+    margin: 10px;
+    padding: 15px 70px;
+    border-radius: 50px;
+    border: 0px;
+    color: #ff6679;
+    outline: none;
+  }
+  .btn:hover {
+    cursor: pointer;
+  }
+  @media (max-width: 900px) {
+    .btn {
+      font-size: 25px;
+      margin: 10px;
+      padding: 10px;
+    }
+  }
+  @media (max-width: 680px) {
+    .btn {
+      font-size: 20px;
+      margin: 8px;
+      padding: 8px;
+    }
+  }
+  @media (max-width: 570px) {
+    .btn {
+      font-size: 20px;
+      margin: 5px;
+      padding: 5px;
+    }
+  }
+  @media (max-width: 490px) {
+    .btn {
+      font-size: 18px;
+      margin: 5px;
+      padding: 5px;
+    }
+  }
