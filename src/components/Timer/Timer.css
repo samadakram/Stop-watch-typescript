@@ -15,8 +15,8 @@
     height: 200px;
     border-radius: 100px;
     border: 10px solid;
-    border-top-color: #f2a365;
-    border-bottom-color: #f2a365;
+    border-left-color: #f2a365;
+    border-right-color: #f2a365;
     display: flex;
     justify-content: center;
     align-items: center;
