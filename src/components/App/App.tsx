@@ -4,7 +4,7 @@ import Timer from '../Timer/Timer';
 
 const App = () => {
     return (
-        <div>
+        <div className="app-container">
             <Timer />
         </div>
     );
