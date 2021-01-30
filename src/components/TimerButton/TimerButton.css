@@ -1,42 +1,47 @@
 .btn {
-    font-size: 26px;
-    margin: 40px 20px 20px 20px ;
-    padding: 15px 70px;
-    border-radius: 50px;
-    border: 0px;
-    color: white;
-    outline: none;
-    text-transform: uppercase;
-    background-color: #f2a365;
+  font-size: 26px;
+  margin: 40px 20px 20px 20px;
+  padding: 15px 70px;
+  border-radius: 50px;
+  border: 0px;
+  color: white;
+  outline: none;
+  text-transform: uppercase;
+  background-color: #f2a365;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .btn {
+    font-size: 25px;
+    margin: 20px 5px 5px 5px;
+    padding: 10px;
   }
-  .btn:hover {
-    cursor: pointer;
+}
+
+@media (max-width: 680px) {
+  .btn {
+    font-size: 20px;
+    margin: 20px 5px 5px 5px;
+    padding: 15px;
   }
-  @media (max-width: 900px) {
-    .btn {
-      font-size: 25px;
-      margin: 20px 5px 5px 5px;
-      padding: 10px;
-    }
+}
+
+@media (max-width: 570px) {
+  .btn {
+    font-size: 20px;
+    margin: 20px 5px 5px 5px;
+    padding: 12px;
   }
-  @media (max-width: 680px) {
-    .btn {
-      font-size: 20px;
-      margin: 20px 5px 5px 5px;
-      padding: 15px;
-    }
+}
+
+@media (max-width: 490px) {
+  .btn {
+    font-size: 18px;
+    margin: 20px 5px 5px 5px;
+    padding: 10px;
   }
-  @media (max-width: 570px) {
-    .btn {
-      font-size: 20px;
-      margin: 20px 5px 5px 5px;
-      padding: 12px;
-    }
-  }
-  @media (max-width: 490px) {
-    .btn {
-      font-size: 18px;
-      margin: 20px 5px 5px 5px;
-      padding: 10px;
-    }
-  }
+}
