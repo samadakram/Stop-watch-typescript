@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './Timer.css';
 
 // import Types
-import {NumberTypes,Button} from '../../Types/Types';
+import { NumberTypes, Button } from '../../Types/Types';
 
 // import Timer Button Component
 import TimerButton from '../TimerButton/TimerButton';
@@ -19,19 +19,19 @@ const Timer = () => {
         setAccess(
             setInterval(() => {
                 if (seconds > 59) {
-                  seconds = 0;
-                  minutes += 1;
-                  setMinutes(minutes);
+                    seconds = 0;
+                    minutes += 1;
+                    setMinutes(minutes);
                 } else if (minutes > 59) {
-                  seconds = 0;
-                  minutes = 0;
-                  hour++;
-                  setHour(hour);
+                    seconds = 0;
+                    minutes = 0;
+                    hour++;
+                    setHour(hour);
                 } else {
-                  setSeconds(seconds);
-                  seconds += 1;
+                    setSeconds(seconds);
+                    seconds += 1;
                 }
-              }, 1000)
+            }, 1000)
         );
     };
 
@@ -53,18 +53,18 @@ const Timer = () => {
             <h1>STOP WATCH</h1>
             <div className="time-box">
                 <span>
-                {hour < 10 && "0"}
-                {hour}:{minutes < 10 && "0"}
-                {minutes}:{seconds < 10 && "0"}
-                {seconds}
+                    {hour < 10 && "0"}
+                    {hour}:{minutes < 10 && "0"}
+                    {minutes}:{seconds < 10 && "0"}
+                    {seconds}
                 </span>
             </div>
             <div className="three-buttons">
                 {disable ? (
                     <TimerButton title="Start" click={start} disable={disable} />
                 ) : (
-                    <TimerButton title="Start" click={start} disable={false} />
-                ) }
+                        <TimerButton title="Start" click={start} disable={false} />
+                    )}
                 <TimerButton title="Pause" click={pause} disable={false} />
                 <TimerButton title="Reset" click={reset} disable={false} />
             </div>
