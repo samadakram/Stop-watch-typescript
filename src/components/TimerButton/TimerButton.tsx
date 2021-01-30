@@ -1,6 +1,6 @@
 import React from 'react';
 import './TimerButton.css';
-import {Button} from '../../Types/Types';
+import { Button } from '../../Types/Types';
 
 const TimerButton: React.FC<Button> = ({ title, click, disable }) => {
   return (
